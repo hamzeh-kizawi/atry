@@ -1,6 +1,5 @@
 import { useState, useCallback, useRef } from 'react'
-import { DotLottiePlayer } from '@dotlottie/react-player'
-import '@dotlottie/react-player/dist/index.css'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import './index.css'
 
 // ─── constants ────────────────────────────────────────────────────────────────
@@ -79,7 +78,7 @@ export default function App() {
 
               {/* lottie – sad / crying emoji */}
               <div className="heartbeat">
-                <DotLottiePlayer
+                <DotLottieReact
                   src="/Sad emoji to Crying emoji.lottie"
                   autoplay
                   loop
@@ -187,7 +186,7 @@ export default function App() {
             }}
           >
             <div className="float-rose">
-              <DotLottiePlayer
+              <DotLottieReact
                 src="/Rose.lottie"
                 autoplay
                 style={{ width: 260, height: 260 }}
